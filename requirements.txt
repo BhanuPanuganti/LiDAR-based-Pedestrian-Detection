@@ -1,0 +1,38 @@
+# Core scientific stack
+numpy>=1.23,<2.3
+scipy>=1.10
+pandas>=1.5
+matplotlib>=3.7
+tqdm>=4.65
+joblib>=1.2
+
+# Classical ML pipeline
+scikit-learn>=1.2
+xgboost>=1.7
+seaborn>=0.12
+
+# OpenPCDet / deep-learning config & logging utilities
+PyYAML>=6.0
+easydict>=1.10
+tensorboardX>=2.6
+scikit-image>=0.21
+numba>=0.57
+
+# Visualization / point-cloud tools
+open3d>=0.18
+
+# Runtime dependency for scripts and OpenPCDet tools.
+# Install CUDA-compatible PyTorch build for your GPU/driver.
+# Example (CUDA 11.8):
+#   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+torch>=2.0
+
+# Optional (used by some OpenPCDet code paths, mainly non-Windows shared memory flow)
+SharedArray>=3.2.4; platform_system != "Windows"
+
+# IMPORTANT:
+# spconv is required by many OpenPCDet models and must match your CUDA + torch versions.
+# Install separately with the correct wheel, e.g. one of:
+#   pip install spconv-cu118
+#   pip install spconv-cu121
+# (choose only one that matches your environment)

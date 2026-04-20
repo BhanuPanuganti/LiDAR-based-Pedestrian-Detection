@@ -1,0 +1,90 @@
+# -----------------------------
+# OS / Editor
+# -----------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# -----------------------------
+# Python
+# -----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# -----------------------------
+# Jupyter
+# -----------------------------
+.ipynb_checkpoints/
+
+# -----------------------------
+# Build / packaging
+# -----------------------------
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# -----------------------------
+# Logs / temp
+# -----------------------------
+*.log
+logs/
+*.tmp
+*.temp
+
+# -----------------------------
+# Project outputs
+# -----------------------------
+outputs/
+visuals/
+
+# OpenPCDet run artifacts
+custom_openpcdet/output/
+custom_openpcdet/build/
+custom_openpcdet/**/tmpdir/
+
+# -----------------------------
+# Large model/data artifacts
+# -----------------------------
+*.ckpt
+*.pth
+*.pt
+*.onnx
+*.engine
+*.npz
+
+# Dataset and generated DB files
+custom_openpcdet/data/
+custom_openpcdet/checkpoints/
+custom_openpcdet/data/**/*.pkl
+custom_openpcdet/data/**/*.bin
+
+# Optional local pretrained files
+deep_learning/pretrained/pth_files/
+
+# -----------------------------
+# Local environment and secrets
+# -----------------------------
+.env
+.env.*
+*.local
+*.secret
